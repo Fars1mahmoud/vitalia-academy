@@ -1,0 +1,6 @@
+{
+  "name": "Vitalia Academy - Enterprise Bilingual Educational Platform",
+  "description": "Enterprise-grade bilingual educational ecosystem featuring role-based portals, course player, examinations, certificate verification, and academic administration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
