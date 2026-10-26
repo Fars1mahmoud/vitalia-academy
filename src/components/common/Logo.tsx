@@ -1,5 +1,6 @@
 import React from 'react';
 import { useI18n } from '../../i18n/I18nContext';
+import vitaliaLogo from '../../assets/vitalia-logo.png';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
@@ -78,7 +79,7 @@ export const Logo: React.FC<LogoProps> = ({
       >
         <div className="relative group p-1.5 rounded-3xl bg-white/95 shadow-vitalia-soft border border-gray-100/60 overflow-hidden transition-all duration-300 hover:shadow-vitalia-hover">
           <img
-            src="/assets/aistudio/image_a49bd4ad.png"
+            src={vitaliaLogo}
             alt="Vitalia Academy Official Logo"
             className={`${current.fullImg} h-auto object-contain rounded-2xl transition-transform duration-300 group-hover:scale-102`}
             loading="eager"
@@ -110,7 +111,7 @@ export const Logo: React.FC<LogoProps> = ({
         }`}
       >
         <img
-          src="/assets/aistudio/image_a49bd4ad.png"
+          src={vitaliaLogo}
           alt="Vitalia Crest"
           className={`${current.imgW} object-cover object-top rounded-xl`}
           loading="eager"

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useI18n } from '../../i18n/I18nContext';
 import { Course } from '../../types';
 import { Logo } from '../common/Logo';
+import vitaliaLogo from '../../assets/vitalia-logo.png';
+import brandBrochure from '../../assets/brand-brochure.png';
 import {
   BookOpen,
   Sprout,
@@ -255,7 +257,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="flex flex-col items-center text-center pb-4 border-b border-white/15">
                   <div className="p-2 rounded-2xl bg-white shadow-md border border-white/30 overflow-hidden">
                     <img
-                      src="/assets/aistudio/image_a49bd4ad.png"
+                      src={vitaliaLogo}
                       alt="Vitalia Academy Official Crest & Logo"
                       className="w-44 sm:w-52 h-auto object-contain rounded-xl transition-transform duration-300 hover:scale-102"
                     />
@@ -374,7 +376,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-vitalia-hover border border-[#EDE8E0] bg-[#FAF8F5] group">
                 <img
-                  src="/assets/aistudio/image_d89e4f95.png"
+                  src={brandBrochure}
                   alt="Vitalia Academy Brand Identity Brochure"
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-102"
                 />

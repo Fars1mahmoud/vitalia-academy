@@ -1,6 +1,7 @@
 import React from 'react';
 import { useI18n } from '../../i18n/I18nContext';
 import { Logo } from '../common/Logo';
+import brandBrochure from '../../assets/brand-brochure.png';
 import {
   BookOpen,
   Sprout,
@@ -109,7 +110,7 @@ export const AboutPage: React.FC = () => {
           <div className="md:col-span-5">
             <div className="rounded-2xl overflow-hidden shadow-md border border-[#EDE8E0]">
               <img
-                src="/assets/aistudio/image_d89e4f95.png"
+                src={brandBrochure}
                 alt="Vitalia Academy Brand Identity"
                 className="w-full h-auto object-cover"
               />
