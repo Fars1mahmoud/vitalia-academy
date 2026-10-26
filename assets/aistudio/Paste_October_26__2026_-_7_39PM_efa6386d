@@ -1,0 +1,1391 @@
+# PROJECT: VITALIA ACADEMY
+
+## Complete Bilingual Educational Platform — Enterprise Edition
+
+Act as a senior product designer, UX architect, frontend engineer, full-stack engineer, and educational technology specialist.
+
+Build a comprehensive, premium, responsive educational platform called VITALIA ACADEMY.
+
+This is NOT a simple landing page, static website, or generic LMS template.
+
+Create a complete, multi-page educational ecosystem with connected navigation, realistic sample data, functional user interactions, role-based dashboards, course management interfaces, examination interfaces, certificate management, subscriptions, payment screens, academic administration, and platform analytics.
+
+The initial implementation must prioritize a complete, polished, interactive frontend, with a clean architecture that supports integration with a real backend and database.
+
+Do not stop after creating the homepage. Build the entire application.
+
+==================================================
+
+1. BRAND IDENTITY
+   ==================================================
+
+Brand: VITALIA ACADEMY
+
+Official tagline:
+"Learn. Grow. Evolve."
+
+Brand philosophy:
+Knowledge Builds Better Futures.
+
+Use the uploaded VITALIA ACADEMY brand identity image as the primary visual reference.
+
+Preserve the existing logo and visual identity as closely as possible.
+
+Brand colors:
+
+* Navy Blue: #123B70
+* Burgundy: #7B1E3A
+* Warm White: #F8F6F2
+* Charcoal: #252A34
+* Soft Gray: #E8E7E4
+* Muted Gold: #B79A62, used sparingly
+
+These are initial design tokens inspired by the supplied reference. Keep them centralized so they can be replaced with official brand colors later.
+
+Visual direction:
+
+* Premium academic institution.
+* Elegant, modern, sophisticated, trustworthy.
+* Editorial typography inspired by university branding.
+* Generous whitespace.
+* Carefully structured layouts.
+* Subtle borders and restrained shadows.
+* Beautiful course cards and dashboards.
+* Professional charts and data visualizations.
+* Refined animations and transitions.
+* Consistent spacing and typography.
+* No excessive gradients.
+* No childish educational illustrations.
+* No generic AI-generated-looking dashboard.
+* No unnecessary glassmorphism.
+* No excessive rounded cards.
+
+Use a consistent design system across the entire application.
+
+Use the uploaded logo wherever appropriate. If a transparent logo asset is unavailable, create a clean reusable logo component without distorting the original logo.
+
+Never replace the brand identity with an unrelated logo.
+
+==================================================
+2. TECHNOLOGY AND ARCHITECTURE
+==============================
+
+Use:
+
+* React.
+* TypeScript.
+* Tailwind CSS.
+* Reusable UI components.
+* React Router or an equivalent routing solution.
+* Lucide React icons.
+* Recharts for analytics when appropriate.
+* React Hook Form and Zod for form handling and validation when appropriate.
+
+Follow the package versions and project structure supported by the current Google AI Studio environment.
+
+Use a clean, modular application structure.
+
+Separate:
+
+* Application layout.
+* Public website.
+* Authentication screens.
+* Student portal.
+* Instructor portal.
+* Teaching assistant portal.
+* Reviewer portal.
+* Academic supervisor portal.
+* Administrator portal.
+* Shared UI components.
+* Data models and types.
+* Mock data.
+* Business logic.
+* API service interfaces.
+* Localization resources.
+* Form validation.
+* Charts and reporting components.
+
+Use strict TypeScript typing.
+
+Avoid oversized monolithic components.
+
+Do not place the entire application inside one file.
+
+Create reusable components for buttons, cards, tables, forms, dialogs, navigation, pagination, notifications, charts, badges, and empty states.
+
+Keep business logic separate from presentation.
+
+Create a centralized mock data service and a clean API abstraction so mock data can later be replaced by real backend services.
+
+Do not expose secrets or API keys in client-side code.
+
+Do not claim that authentication, payments, email delivery, or database persistence are real unless they have actually been implemented and configured.
+
+==================================================
+3. COMPLETE BILINGUAL EXPERIENCE
+================================
+
+The platform must support:
+
+* Arabic.
+* English.
+
+Create a language switcher in the public header and authenticated dashboards.
+
+English:
+
+* Left-to-right layout.
+* English navigation.
+* English forms.
+* English validation messages.
+* English course content.
+
+Arabic:
+
+* Right-to-left layout.
+* Arabic navigation.
+* Arabic forms.
+* Arabic validation messages.
+* Correct RTL tables, menus, sidebars, icons, and layouts.
+
+Use proper Arabic typography, such as Cairo or another appropriate Arabic web font.
+
+Do not simply translate headings while leaving the rest of the interface in the wrong direction.
+
+Switching languages must update the entire interface consistently.
+
+Preserve the current route and relevant application state when possible.
+
+Store the selected language using an appropriate application preference mechanism.
+
+Avoid hardcoding visible UI strings throughout components. Centralize translations.
+
+All major pages must be available in both languages.
+
+==================================================
+4. APPLICATION STRUCTURE
+========================
+
+Create two main experiences:
+
+A. PUBLIC WEBSITE
+
+Available to visitors.
+
+B. AUTHENTICATED APPLICATION
+
+Available to users after signing in.
+
+The authenticated application must change its navigation, dashboard, available actions, and data according to the current user's role.
+
+Create a polished shared application shell with:
+
+* Responsive sidebar.
+* Top navigation bar.
+* Search.
+* Notifications.
+* Language switcher.
+* User profile menu.
+* Breadcrumbs.
+* Main content area.
+* Responsive mobile navigation.
+
+Do not display every management feature to every user.
+
+==================================================
+5. PUBLIC WEBSITE PAGES
+=======================
+
+Create the following routes and pages.
+
+1. Home
+2. About Vitalia
+3. Explore Courses
+4. Course Categories
+5. Course Details
+6. Instructors Directory
+7. Instructor Profile
+8. Academic Programs
+9. Pricing and Plans
+10. How It Works
+11. Certificate Verification
+12. Contact Us
+13. Help Center
+14. Frequently Asked Questions
+15. Login
+16. Register
+17. Forgot Password
+18. Privacy Policy
+19. Terms and Conditions
+20. Refund Policy
+
+HOME PAGE:
+
+Build an elegant university-grade homepage.
+
+Header:
+
+* VITALIA ACADEMY logo.
+* Home.
+* Explore Courses.
+* Categories.
+* Instructors.
+* About.
+* Pricing.
+* Language switcher.
+* Login.
+* Join Academy CTA.
+
+Hero section:
+Headline:
+"Build Your Future Through Knowledge."
+
+Arabic:
+"ابنِ مستقبلك بالمعرفة."
+
+Supporting copy:
+"Discover expert-led courses, develop practical skills, and earn certificates that recognize your learning achievements."
+
+Arabic:
+"اكتشف كورسات يقدمها خبراء، وطوّر مهاراتك العملية، واحصل على شهادات توثق إنجازاتك التعليمية."
+
+Primary CTA:
+Explore Courses.
+
+Secondary CTA:
+Become an Instructor.
+
+Create an elegant visual composition inspired by the supplied VITALIA brand identity.
+
+Include:
+
+* Featured course collection.
+* Popular categories.
+* Featured instructors.
+* Learning pathways.
+* How the academy works.
+* Certificate verification section.
+* Student testimonials using clearly identified sample content.
+* Statistics populated with sample data and labeled as demo statistics.
+* Pricing plans.
+* Newsletter subscription form.
+* Comprehensive footer.
+
+Avoid fabricated claims about accreditation, partnerships, employment rates, or actual student outcomes.
+
+COURSE CATALOG:
+
+Provide:
+
+* Search.
+* Category filters.
+* Price filters.
+* Difficulty filters.
+* Language filters.
+* Instructor filters.
+* Rating filters.
+* Sort by newest, popularity, and rating.
+* Grid and list views.
+* Pagination.
+* Clear filter controls.
+* Empty states.
+* Course preview cards.
+
+Each course card must display:
+
+* Thumbnail.
+* Course title.
+* Instructor.
+* Category.
+* Difficulty.
+* Duration.
+* Number of lessons.
+* Rating.
+* Price or Free label.
+* Enrollment status where relevant.
+
+COURSE DETAILS:
+
+Include:
+
+* Course overview.
+* Learning outcomes.
+* Curriculum.
+* Instructor information.
+* Requirements.
+* Target audience.
+* Course duration.
+* Number of lessons.
+* Student reviews.
+* Pricing.
+* Enrollment CTA.
+* Related courses.
+* Certificate eligibility requirements.
+
+Make all internal navigation functional.
+
+==================================================
+6. AUTHENTICATION AND USER ROLES
+================================
+
+Support these user roles:
+
+1. Super Administrator.
+2. Academy Administrator.
+3. University Professor.
+4. Instructor or Trainer.
+5. Teaching Assistant.
+6. Course Reviewer.
+7. Academic Supervisor.
+8. Student.
+9. Content Creator.
+10. Support Agent.
+11. Certificate Verifier.
+
+A person may have multiple roles.
+
+Create realistic login and registration screens.
+
+Registration should support:
+
+* Full name.
+* Email.
+* Password.
+* Password confirmation.
+* Preferred language.
+* Account type where appropriate.
+* Terms acceptance.
+
+Instructor applications must include:
+
+* Professional biography.
+* Areas of expertise.
+* Qualifications.
+* Relevant experience.
+* Portfolio or profile URL.
+* Application status.
+
+Create a dedicated instructor application review interface.
+
+For the frontend demonstration, provide a DEMO MODE with predefined sample accounts for each role.
+
+Include a visible notice that demo accounts are for preview only.
+
+Use a role switcher only in explicit demo mode. It must never be presented as a production security mechanism.
+
+If a real authentication service is configured, use authenticated identities and server-enforced role permissions.
+
+Do not implement production authentication using hardcoded credentials.
+
+==================================================
+7. STUDENT PORTAL
+=================
+
+Create a complete Student Dashboard.
+
+Sidebar:
+
+* Overview.
+* My Learning.
+* Explore Courses.
+* Learning Paths.
+* Assignments.
+* Exams.
+* Grades and Results.
+* My Certificates.
+* Bookmarks.
+* Discussions.
+* Notifications.
+* Payments and Subscriptions.
+* Support.
+* Profile.
+* Settings.
+
+STUDENT DASHBOARD:
+
+Display:
+
+* Welcome message.
+* Enrolled courses.
+* In-progress courses.
+* Completed courses.
+* Overall learning progress.
+* Upcoming live sessions.
+* Upcoming examinations.
+* Pending assignments.
+* Recent grades.
+* Recently issued certificates.
+* Recommended courses.
+
+MY LEARNING:
+
+Provide:
+
+* Course cards.
+* Progress indicators.
+* Continue Learning button.
+* Last lesson visited.
+* Completed lessons.
+* Upcoming deadlines.
+* Completion status.
+
+COURSE PLAYER:
+
+Build a polished learning interface with:
+
+* Video player area.
+* Course curriculum sidebar.
+* Expandable modules.
+* Lesson navigation.
+* Mark as completed action.
+* Learning resources.
+* Downloadable attachments when permitted.
+* Lesson notes.
+* Questions and answers.
+* Course announcements.
+* Progress tracking.
+
+Use sample videos or clearly labeled preview placeholders.
+
+Do not represent a placeholder as an actual protected video service.
+
+ASSIGNMENTS:
+
+Students can:
+
+* View assignment instructions.
+* See deadlines.
+* Read grading criteria.
+* Submit a text response.
+* Attach a simulated file reference in demo mode.
+* View submission status.
+* View instructor feedback.
+* View grades when released.
+
+EXAMS:
+
+Display:
+
+* Available examinations.
+* Upcoming examinations.
+* Completed examinations.
+* Attempt history.
+* Time limits.
+* Attempt limits.
+* Passing requirements.
+* Results and feedback according to examination policy.
+
+GRADES:
+
+Display:
+
+* Course grades.
+* Assignment grades.
+* Examination grades.
+* Instructor feedback.
+* Completion status.
+
+MY CERTIFICATES:
+
+Display:
+
+* Issued certificates.
+* Course name.
+* Issue date.
+* Certificate ID.
+* Verification status.
+* View Certificate.
+* Download PDF when PDF generation is implemented.
+
+PROFILE:
+
+Provide editable profile fields, profile photo placeholder, biography, interests, and learning preferences.
+
+==================================================
+8. INSTRUCTOR AND PROFESSOR PORTAL
+==================================
+
+Create a professional instructor workspace.
+
+Sidebar:
+
+* Overview.
+* My Courses.
+* Create Course.
+* Curriculum Builder.
+* Lessons and Resources.
+* Student Roster.
+* Assignments.
+* Grading.
+* Exams.
+* Question Bank.
+* Live Sessions.
+* Discussions.
+* Announcements.
+* Course Analytics.
+* Reviews.
+* Earnings.
+* Profile and Settings.
+
+INSTRUCTOR DASHBOARD:
+
+Display:
+
+* Total students.
+* Active courses.
+* Published courses.
+* Courses awaiting review.
+* Pending assignment grading.
+* Upcoming live sessions.
+* Average course completion.
+* Recent student activity.
+* Course performance chart.
+* Recent feedback.
+
+COURSE BUILDER:
+
+Create a complete multi-step course creation workflow.
+
+Step 1:
+
+* Title.
+* Subtitle.
+* Description.
+* Category.
+* Language.
+* Difficulty.
+* Target audience.
+* Learning objectives.
+
+Step 2:
+
+* Course thumbnail.
+* Preview media.
+* Instructor details.
+* Requirements.
+* Prerequisites.
+
+Step 3:
+
+* Course curriculum.
+* Modules.
+* Lessons.
+* Videos.
+* Text lessons.
+* PDF resources.
+* External resources.
+* Assignments.
+* Quizzes.
+
+Step 4:
+
+* Pricing.
+* Free or paid.
+* Course access rules.
+* Enrollment settings.
+
+Step 5:
+
+* Preview.
+* Validation.
+* Save draft.
+* Submit for review.
+
+Allow users to add, edit, reorder, and remove modules and lessons in the frontend demo.
+
+Support course statuses:
+
+* Draft.
+* Pending Review.
+* Changes Requested.
+* Approved.
+* Published.
+* Archived.
+
+Do not automatically publish a course that requires academic approval.
+
+STUDENT MANAGEMENT:
+
+Create:
+
+* Student list.
+* Search.
+* Filters.
+* Enrollment date.
+* Course progress.
+* Grades.
+* Assignment status.
+* Student profile preview.
+
+GRADING:
+
+Allow instructors to:
+
+* Review submissions.
+* Enter grades.
+* Add feedback.
+* Save drafts.
+* Publish grades.
+* Filter ungraded submissions.
+
+All sample data must be clearly separated from real records.
+
+==================================================
+9. TEACHING ASSISTANT PORTAL
+============================
+
+Create a dedicated Teaching Assistant Dashboard.
+
+Include:
+
+* Assigned courses.
+* Assigned student groups.
+* Pending grading tasks.
+* Student questions.
+* Upcoming deadlines.
+* Recent activity.
+
+Features:
+
+* View assigned students.
+* Review permitted assignments.
+* Grade permitted submissions.
+* Add feedback.
+* Answer course questions.
+* Track student progress.
+* Flag students who may need additional support.
+* Prepare reports for the professor.
+
+Teaching assistants must only see courses, students, and actions permitted by their assigned permissions.
+
+==================================================
+10. COURSE REVIEWER PORTAL
+==========================
+
+Create a dedicated academic content review workspace.
+
+Dashboard:
+
+* Pending course reviews.
+* Pending lesson reviews.
+* Pending examination reviews.
+* Recently returned submissions.
+* Review turnaround statistics.
+
+Review interface:
+
+* Course overview.
+* Curriculum preview.
+* Learning objectives.
+* Content quality checklist.
+* Lesson completeness checklist.
+* Accessibility checklist.
+* Assessment alignment checklist.
+* Duplicate question warnings.
+* Review comments.
+* Approve.
+* Request Changes.
+* Reject with reason.
+
+Create an audit history for each review.
+
+Reviewers must not automatically receive access to financial or unrelated student information.
+
+==================================================
+11. ACADEMIC SUPERVISOR PORTAL
+==============================
+
+Create a dashboard for supervising groups of courses and instructors.
+
+Features:
+
+* Academic overview.
+* Assigned departments.
+* Course quality metrics.
+* Instructor performance summaries.
+* Student completion trends.
+* Examination performance.
+* Course review status.
+* Academic issue tracking.
+* Quality assurance reports.
+
+All analytics must use actual configured data or clearly labeled sample data.
+
+==================================================
+12. ADMINISTRATION PORTAL
+=========================
+
+Create a complete Academy Administration Dashboard.
+
+SUPER ADMIN SIDEBAR:
+
+* Overview.
+* Users.
+* Roles and Permissions.
+* Instructor Applications.
+* Departments and Categories.
+* Courses.
+* Course Reviews.
+* Academic Operations.
+* Enrollments.
+* Exams.
+* Question Bank.
+* Certificates.
+* Subscriptions.
+* Payments.
+* Invoices.
+* Refund Requests.
+* Instructor Earnings.
+* Support Tickets.
+* Notifications.
+* Content Management.
+* Reports and Analytics.
+* Audit Logs.
+* Platform Settings.
+
+ADMIN DASHBOARD:
+
+Display:
+
+* Total users.
+* Active students.
+* Active instructors.
+* Published courses.
+* Pending course reviews.
+* Total enrollments.
+* Certificates issued.
+* Monthly revenue using sample data.
+* Subscription distribution.
+* Enrollment trends.
+* Course category distribution.
+* Recent administrative activities.
+
+USER MANAGEMENT:
+
+Build a fully interactive data table.
+
+Features:
+
+* Search.
+* Filters.
+* Sorting.
+* Pagination.
+* View user.
+* Edit permitted fields.
+* Activate or suspend account.
+* Assign roles.
+* View enrollment history.
+* View account activity.
+
+Require confirmation for destructive or high-impact actions.
+
+ROLE AND PERMISSION MANAGEMENT:
+
+Create permission categories:
+
+* Users.
+* Courses.
+* Content.
+* Exams.
+* Grades.
+* Certificates.
+* Payments.
+* Reports.
+* Settings.
+
+Display permissions in a clear matrix.
+
+Prevent accidental removal of the last active super administrator in the demo workflow.
+
+COURSE MANAGEMENT:
+
+Admins can:
+
+* Review all courses.
+* Filter by category, instructor, and status.
+* Inspect course content.
+* Approve courses.
+* Request changes.
+* Archive courses.
+* View enrollment statistics.
+
+CERTIFICATE MANAGEMENT:
+
+Admins can:
+
+* Search certificates.
+* Inspect certificate records.
+* View current status.
+* Revoke certificates with a required reason.
+* View revocation history.
+* Preview certificate designs.
+
+PAYMENT MANAGEMENT:
+
+Provide:
+
+* Transaction table.
+* Payment status.
+* Order references.
+* Subscription status.
+* Refund request interface.
+* Revenue charts.
+* Instructor payout summaries.
+
+Use demo data only unless a real payment provider is configured.
+
+Do not simulate successful real financial transactions.
+
+==================================================
+13. COURSE EXAMINATION ENGINE
+=============================
+
+Create a dedicated examination management system.
+
+QUESTION TYPES:
+
+* Multiple Choice.
+* Multiple Select.
+* True or False.
+* Short Answer.
+* Essay.
+* Matching.
+* Fill in the Blanks.
+* Coding Question.
+* Practical Assignment.
+
+QUESTION BANK:
+
+Features:
+
+* Create questions.
+* Edit questions.
+* Categorize questions.
+* Set difficulty.
+* Assign point values.
+* Add explanations.
+* Add tags.
+* Preview questions.
+* Filter and search.
+* Create question sets.
+
+EXAM BUILDER:
+
+Allow authorized instructors to configure:
+
+* Examination title.
+* Description.
+* Linked course.
+* Question selection.
+* Total marks.
+* Time limit.
+* Passing score.
+* Number of attempts.
+* Random question ordering.
+* Random answer ordering where applicable.
+* Start and end dates.
+* Result publication policy.
+
+EXAM TAKING INTERFACE:
+
+Build a distraction-minimized examination page.
+
+Include:
+
+* Examination instructions.
+* Timer.
+* Question navigator.
+* Current question.
+* Answer inputs.
+* Mark for review.
+* Previous and next navigation.
+* Answered and unanswered status.
+* Submission confirmation dialog.
+* Clear submission feedback.
+
+For the frontend demo:
+
+* Implement a functional countdown.
+* Track answers locally in application state.
+* Calculate scores for supported objective questions.
+* Show a sample results page.
+* Clearly label the system as a demonstration until server-side examination logic is connected.
+
+ESSAY QUESTIONS:
+
+Mark as requiring manual grading unless a separately configured and reviewed grading service is used.
+
+Never trust client-calculated grades as authoritative in production.
+
+==================================================
+14. CERTIFICATE MANAGEMENT
+==========================
+
+Certificates are issued for successful course completion.
+
+This project uses COURSE COMPLETION CERTIFICATES as the initial official certificate category.
+
+Create configurable eligibility requirements:
+
+* Required lessons completed.
+* Required assignments submitted or passed when applicable.
+* Final examination passed when required by the course.
+* Minimum course progress reached.
+* Any additional course-specific completion requirements.
+
+Create a certificate template matching VITALIA ACADEMY branding.
+
+Certificate fields:
+
+* Academy logo.
+* Student name.
+* Course name.
+* Issue date.
+* Certificate ID.
+* Authorized issuer.
+* Verification URL.
+* QR code.
+
+Create:
+
+* Student certificate gallery.
+* Certificate preview.
+* Admin certificate management.
+* Public certificate verification page.
+* Certificate revocation status.
+* Verification history.
+
+Use unique certificate identifiers.
+
+When real backend services are not configured, label certificate records as demo records.
+
+Do not claim that a demo certificate is officially issued or legally accredited.
+
+When implemented, generate downloadable PDF certificates using an appropriate library.
+
+QR codes must point to the actual verification route, not an invented external URL.
+
+Public verification must reveal only the minimum necessary information.
+
+==================================================
+15. PRICING, SUBSCRIPTIONS, AND COMMERCE
+========================================
+
+The platform supports free courses, paid courses, and subscription plans.
+
+Create:
+
+* Course purchase interface.
+* Pricing page.
+* Monthly subscription plan.
+* Annual subscription plan.
+* Free learning plan.
+* Premium learning plan.
+* Checkout screen.
+* Order summary.
+* Coupon entry.
+* Payment status screen.
+* Subscription management.
+* Invoice history.
+* Refund request form.
+
+Make prices, currencies, and plan benefits configurable.
+
+Use EGP as the initial display currency, with the ability to support other currencies later.
+
+Do not assume payment providers are already connected.
+
+Build payment provider abstraction points so real providers can be integrated later.
+
+In demo mode, use clearly labeled simulated checkout behavior.
+
+Never collect or store real card details in the frontend demo.
+
+Do not claim a payment has actually been processed unless a real payment provider confirms it.
+
+==================================================
+16. COMMUNICATION AND SUPPORT
+=============================
+
+Create:
+
+* Notification center.
+* Announcements.
+* Course discussions.
+* Questions and answers.
+* Support ticket management.
+* Student support portal.
+* Instructor announcements.
+* Upcoming session reminders.
+* Email notification preference settings.
+
+Support tickets must include:
+
+* Ticket ID.
+* Subject.
+* Category.
+* Priority.
+* Status.
+* Created date.
+* Message history.
+
+Provide working frontend filtering, ticket creation, status updates, and details views using demo data.
+
+Do not claim that emails or external notifications have been sent without a configured delivery service.
+
+==================================================
+17. SEARCH AND DISCOVERY
+========================
+
+Create a global search interface.
+
+Search across permitted records:
+
+* Courses.
+* Instructors.
+* Categories.
+* Learning paths.
+* Public help articles.
+
+Create filters and useful empty states.
+
+For the demo, implement actual client-side filtering over sample data.
+
+Do not display search results that the current user's role is not allowed to access.
+
+==================================================
+18. ANALYTICS AND REPORTING
+===========================
+
+Create polished analytics pages for administrators, instructors, and academic supervisors.
+
+Charts may include:
+
+* Enrollment trends.
+* Course completion.
+* Student engagement.
+* Examination performance.
+* Category distribution.
+* Instructor course performance.
+* Certificate issuance.
+* Subscription distribution.
+* Revenue trends.
+
+Include:
+
+* Date filters.
+* Category filters where relevant.
+* KPI cards.
+* Tables.
+* Charts.
+* Export to CSV for available demo datasets.
+
+All metrics must be derived from the displayed dataset.
+
+Clearly label demonstration data.
+
+Do not fabricate live analytics or present demo metrics as real academy statistics.
+
+==================================================
+19. PROFILE AND SETTINGS
+========================
+
+Create profile and settings pages for every relevant role.
+
+Include:
+
+* Personal information.
+* Profile photo placeholder.
+* Biography.
+* Language.
+* Time zone.
+* Notification preferences.
+* Password management interface.
+* Account security settings.
+* Session management interface where supported.
+* Accessibility preferences.
+
+Administrative settings:
+
+* Academy branding.
+* Default language.
+* Supported languages.
+* Course approval workflow.
+* Certificate template settings.
+* Course completion rules.
+* Subscription configuration.
+* Notification templates.
+* Platform policies.
+
+Do not imply that a setting is saved to a real database if only local demo state is used.
+
+==================================================
+20. USER EXPERIENCE REQUIREMENTS
+================================
+
+Every page must be thoughtfully designed.
+
+Include:
+
+* Loading states.
+* Empty states.
+* Error states.
+* Success feedback.
+* Confirmation dialogs.
+* Form validation.
+* Search and filtering.
+* Responsive tables.
+* Accessible labels.
+* Keyboard navigation.
+* Visible focus states.
+* Consistent button hierarchy.
+* Helpful validation messages.
+
+Every visible interactive control must work.
+
+Do not create decorative buttons that do nothing.
+
+If a feature requires a service that is not configured, show an informative disabled state or a clearly labeled demo implementation.
+
+Avoid horizontal overflow.
+
+Ensure that the design works at:
+
+* 320px mobile width.
+* 390px mobile width.
+* Tablet sizes.
+* 1366px desktop.
+* 1920px desktop.
+
+Make mobile navigation easy to use.
+
+Use accessible color contrast.
+
+Respect reduced-motion preferences.
+
+==================================================
+21. DATA MODELS AND SAMPLE DATA
+===============================
+
+Define reusable TypeScript interfaces for:
+
+User
+Role
+Permission
+InstructorProfile
+InstructorApplication
+Category
+Department
+Course
+CourseModule
+Lesson
+Enrollment
+LearningProgress
+Assignment
+AssignmentSubmission
+Exam
+Question
+ExamAttempt
+ExamAnswer
+Grade
+Certificate
+Subscription
+Order
+Payment
+Invoice
+Coupon
+Announcement
+Discussion
+SupportTicket
+Notification
+AuditLog
+
+Create realistic, interconnected sample data for:
+
+* Multiple instructors.
+* Multiple teaching assistants.
+* Multiple reviewers.
+* Multiple administrators.
+* At least 12 sample courses across different categories.
+* Multiple course modules and lessons.
+* Multiple students.
+* Enrollments and progress records.
+* Assignments and submissions.
+* Examinations and question banks.
+* Certificate records.
+* Subscriptions and sample transactions.
+* Notifications and support tickets.
+
+Use realistic Arabic and English names and course titles.
+
+Make the application feel populated and ready for evaluation.
+
+Clearly distinguish sample records from real records.
+
+Create centralized sample data instead of duplicating inconsistent arrays across components.
+
+==================================================
+22. INTERACTION REQUIREMENTS
+============================
+
+Implement working frontend interactions for:
+
+* Navigation between every major page.
+* Language switching.
+* Demo role selection.
+* Login demonstration flow.
+* Registration form validation.
+* Course search.
+* Course filtering.
+* Course details navigation.
+* Course enrollment demonstration.
+* Bookmarking courses.
+* Student lesson completion.
+* Progress updates.
+* Assignment submission demonstration.
+* Exam answering and submission.
+* Objective-question score calculation.
+* Instructor course creation.
+* Adding and removing curriculum modules.
+* Editing course metadata.
+* Course review workflow.
+* Assignment grading.
+* Student list filtering.
+* Certificate previews.
+* Certificate verification using sample records.
+* Subscription selection.
+* Demo checkout.
+* Notification read/unread state.
+* Support ticket creation.
+* Admin user management.
+* Admin course review actions.
+* CSV export where available.
+* Profile editing in demo state.
+
+Ensure that actions update the relevant application state and that the UI visibly reflects changes.
+
+Persist non-sensitive demo preferences and records using a suitable development-only persistence layer if appropriate.
+
+Do not use browser storage as a production database.
+
+==================================================
+23. PRODUCTION-READY ARCHITECTURE BOUNDARIES
+============================================
+
+Prepare the application for future backend integration.
+
+Create service interfaces for:
+
+* Authentication.
+* Users.
+* Courses.
+* Enrollments.
+* Progress.
+* Assignments.
+* Exams.
+* Grades.
+* Certificates.
+* Payments.
+* Notifications.
+* Support tickets.
+* Analytics.
+
+Keep mock implementations separate from production implementations.
+
+Design the data layer so it can later connect to:
+
+* A real authentication provider.
+* A persistent database.
+* Server-side authorization.
+* Secure file storage.
+* Video streaming.
+* Email delivery.
+* Payment processing.
+* Server-generated certificates.
+* Server-side exam grading.
+
+Do not pretend that these services are operational if they have not been configured.
+
+For any real user data, enforce authorization on the server rather than relying on hidden frontend controls.
+
+Use server-side validation for important actions.
+
+Protect sensitive user information.
+
+Do not expose private exam answers before the allowed release time.
+
+Do not allow users to grant themselves administrative permissions.
+
+==================================================
+24. FINAL DESIGN QUALITY
+========================
+
+The final application should feel like a premium international educational institution.
+
+The design must be cohesive, polished, and consistent.
+
+Use:
+
+* Excellent typography.
+* Professional spacing.
+* Well-designed navigation.
+* Meaningful data visualization.
+* Carefully designed tables.
+* Beautiful course thumbnails.
+* Consistent status badges.
+* Clean forms.
+* Elegant certificate layouts.
+* Professional admin dashboards.
+* Thoughtful responsive layouts.
+
+Avoid:
+
+* Generic template aesthetics.
+* Excessive gradients.
+* Inconsistent component styles.
+* Random colors.
+* Broken links.
+* Placeholder pages with no useful content.
+* Fake production functionality.
+* Unnecessary animations.
+* Duplicated pages.
+* Unstructured code.
+
+==================================================
+25. EXECUTION INSTRUCTIONS
+==========================
+
+Build the application in the current Google AI Studio project.
+
+Do not merely explain how to build it.
+
+Actually create the project files, components, routes, sample data, and styles.
+
+Begin by implementing the complete application shell, design system, routing, language system, public website, and role-based dashboards.
+
+Then continue implementing the course catalog, course player, course builder, assignments, examinations, certificates, subscriptions, administration, analytics, and support modules.
+
+Preserve working functionality while expanding the project.
+
+Do not replace the application with a simplified homepage.
+
+Do not delete existing functional modules merely to make room for new ones.
+
+After implementation:
+
+1. Run the available build and validation checks.
+2. Fix TypeScript errors.
+3. Fix missing imports.
+4. Fix routing errors.
+5. Fix runtime errors.
+6. Check Arabic RTL rendering.
+7. Check English LTR rendering.
+8. Check responsive layouts.
+9. Verify all navigation links.
+10. Verify every visible interactive control.
+11. Verify that sample data remains consistent across dashboards.
+12. Identify features that still require external configuration.
+
+If the entire application cannot be completed in a single generation, implement it in coherent stages while preserving the project architecture and continuing until all major routes are implemented.
+
+Start building now.
